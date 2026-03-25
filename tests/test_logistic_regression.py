@@ -1,7 +1,7 @@
 # This file contains tests for the logistic regression implementation.
 
 import numpy as np 
-from ml.logistic_regression import train_logistic_regression
+from Classic_ML import train_logistic_regression
 
 def _sigmoid(z):
     """Numerically stable sigmoid implementation.
@@ -33,6 +33,6 @@ def test_logistic_regression():
     
     # Assert that the predictions match the true labels
     assert np.array_equal(predictions, y), f"Expected {y}, but got {predictions}"
-    print("Test passed!")
+
     
     

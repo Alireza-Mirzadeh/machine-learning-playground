@@ -3,10 +3,10 @@ import numpy as np
 def _sigmoid(z):
     """Numerically stable sigmoid implementation.
     
-    args:
+    Args:
         z: A numpy array of any shape.
     
-    returns:
+    Returns:
         A numpy array of the same shape as z, where each element is the sigmoid of the corresponding element in z.
     """
     return np.where(z >= 0, 1/(1+np.exp(-z)), np.exp(z)/(1+np.exp(z)))
@@ -15,13 +15,13 @@ def train_logistic_regression(X, y, lr=0.1, steps=1000):
     """
     Train a logistic regression model using gradient descent.
     
-    args:
+    Args:
         X: A numpy array of shape (N, d) containing the training data, where N is the number of samples and d is the number of features.
         y: A numpy array of shape (N,) containing the binary labels (0 or 1) for each sample.
         lr: Learning rate for gradient descent (default: 0.1).
         steps: Number of iterations for gradient descent (default: 1000).
         
-    returns:
+    Returns:
         A tuple (w, b) where w is the weight vector of shape (d,) and b is the bias term (scalar).
     """
     
