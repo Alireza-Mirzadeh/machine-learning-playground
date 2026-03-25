@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "machine-learning-playground"
+version = "0.1.0"
+description = "A hands-on collection of machine learning algorithms and exercises implemented from scratch using NumPy, with a focus on core concepts learning and NLP applications."
+authors = [
+    {name = "Alireza"}
+]
+dependencies = [
+    "numpy"
+]
+
+[project.optional-dependencies]
+dev = ["pytest"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
