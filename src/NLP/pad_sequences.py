@@ -10,7 +10,7 @@ def pad_sequences(seqs, pad_value=0, max_len=None):
         max_len: maximum length to pad to (default: None, which means pad to the length of the longest sequence).
     
     Returns:
-        np.ndarray of shape (N, L) where:
+        np.ndarray: of shape (N, L) where:
         N = len(seqs)
         L = max_len if provided else max(len(seq) for seq in seqs) or 0
     """
