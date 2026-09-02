@@ -1,20 +1,9 @@
-[build-system]
-requires = ["setuptools"]
-build-backend = "setuptools.build_meta"
-
 [project]
-name = "machine-learning-playground"
+name = "ml-engineering-from-scratch"
 version = "0.1.0"
-description = "A hands-on collection of machine learning algorithms and exercises implemented from scratch using NumPy, with a focus on core concepts learning and NLP applications."
-authors = [
-    {name = "Alireza"}
-]
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
 dependencies = [
-    "numpy"
+    "numpy>=2.5.2",
 ]
-
-[project.optional-dependencies]
-dev = ["pytest"]
-
-[tool.setuptools.packages.find]
-where = ["src"]

@@ -1,4 +1,7 @@
+# Logistic Regression Implementation with numpy
+
 import numpy as np
+
 
 def _sigmoid(z):
     """Numerically stable sigmoid implementation.

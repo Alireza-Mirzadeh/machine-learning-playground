@@ -1,4 +1,7 @@
+# Function to pad sequences to the same length implemented in Python using NumPy. 
+
 import numpy as np
+
 
 def pad_sequences(seqs, pad_value=0, max_len=None):
     """
